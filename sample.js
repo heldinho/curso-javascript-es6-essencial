@@ -266,3 +266,36 @@ const totalEvenAges = persons
   }, 0)
   
 console.log('\nSoma de idades das pessoas que possuem idade par', totalEvenAges)
+
+
+//
+//
+//
+// Operadores: aritméticos, atribuição, comparação, condicional, lógicos e spread
+
+//mod
+12 % 5
+
+// incremento (++) e decremento (--)
+// ++x
+// x++
+
+// const a = ++2
+// const b = 2++
+
+// --x
+// x--
+
+// negação (-) e adição (+)
+// -3
+// +"3"
+// +true
+// +false
+// -true
+
+// operador de exponenciação (**)
+2 ** 3
+10 ** -1
+
+// operador de agrupamento ()
+2 * (3 + 2)
