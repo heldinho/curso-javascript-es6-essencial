@@ -308,17 +308,17 @@ console.log('\nSoma de idades das pessoas que possuem idade par', totalEvenAges)
 var partes = ['ombro', 'joelhos']
 var musica = ['cabeca', ...partes, 'e', 'pés']
 
-function fn(x, y, z) {
+function fn2(x, y, z) {
   console.log('x:',x, 'y:',y, 'z:',z)
 }
 var args = [0, 1, 2]
-fn(...args)
+fn2(...args)
 
 // deletar algo
-delete something
+// delete something
 
 // tipo
-typeof something
+// typeof something
 
 // in
 // something in somethingItems
@@ -349,3 +349,36 @@ var dia = new Date()
 if (dia instanceof Date) {
  // code here
 }
+
+
+//
+//
+//
+// Estruturas condicionais
+
+const array = [0, 1, 2, 3, 4, 5]
+
+array.forEach(item => {
+  if (item % 2 === 0) {
+    console.log(`O número ${item} é par.`)
+  } else {
+    console.log(`O número ${item} é impar.`)
+  }
+})
+
+const array2 = [2, 3, 4, 5, 6, 8, 10, 15]
+
+array2.forEach(item => {
+  if (item % 2 === 0) {
+    console.log(`${item} é divisivel por 2.`)
+  }
+  else if (item % 3 === 0) {
+    console.log(`${item} é divisivel por 3.`)
+  }
+  else if (item % 5 === 0) {
+    console.log(`${item} é divisivel por 5.`)
+  }
+  else {
+    console.log(`${item} não é divisivel.`)
+  }
+})
