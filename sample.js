@@ -299,3 +299,53 @@ console.log('\nSoma de idades das pessoas que possuem idade par', totalEvenAges)
 
 // operador de agrupamento ()
 2 * (3 + 2)
+
+
+//
+//
+//
+// Spread
+var partes = ['ombro', 'joelhos']
+var musica = ['cabeca', ...partes, 'e', 'pés']
+
+function fn(x, y, z) {
+  console.log('x:',x, 'y:',y, 'z:',z)
+}
+var args = [0, 1, 2]
+fn(...args)
+
+// deletar algo
+delete something
+
+// tipo
+typeof something
+
+// in
+// something in somethingItems
+
+// array
+var arvores = new Array('pau-brasil', 'loureiro', 'cedro', 'carvalho', 'sicômoro')
+0 in arvores
+3 in arvores
+6 in arvores
+'cedro' in arvores // retorna false (voce deve especificar o indice não o valor daquele indice)
+'lenth' in arvores // retorn true (length é uma propriedade de array)
+
+// objetos predefinidos
+'PI' in Math
+var minhaString = new String('coral')
+'length' in minhaString
+
+// objetos personalizados
+var meucarro = {marca: 'honda', modelo: 'accord', ano: 1998}
+'marca' in meucarro
+'modelo' in meucarro
+
+// instaceof
+// objeto instanceof tipoObjeto
+
+var dia = new Date()
+
+if (dia instanceof Date) {
+ // code here
+}
