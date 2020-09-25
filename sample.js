@@ -1,3 +1,20 @@
+const json = {
+  address: {
+    country: 'US'
+  }
+}
+if (json && json.address && json.address.country === 'US') {
+  console.log('True')
+} else {
+  console.log('False')
+}
+
+if (json?.address?.country === 'US') {
+  console.log('True')
+} else {
+  console.log('False')
+}
+
 function init(v1) {
   console.log(v1);
   return function (v2) {
