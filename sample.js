@@ -1,3 +1,15 @@
+function Animal() {
+  this.qtdePatas = 4
+}
+const cachorro = new Animal()
+console.log(cachorro.qtdePatas)
+
+// o que ocorre ?
+// 1 - um novo objeto é criado, herdando Foo.prototype
+// 2 - a função construtora Foo é chamada com os argumentos especificados e com o `this` vinculado ao novo objeto criado.
+// 3 - caso a função construtora tenha um retorno explícito, será respeitado o seu `return`. Se não, será retornado o objeto criado no passo 1.
+
+
 const json = {
   address: {
     country: 'US'
